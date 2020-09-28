@@ -1,9 +1,7 @@
 package io.mohkeita.orderservice.controller;
 
-import io.mohkeita.orderservice.common.Payment;
 import io.mohkeita.orderservice.common.TransactionRequest;
 import io.mohkeita.orderservice.common.TransactionResponse;
-import io.mohkeita.orderservice.entity.Order;
 import io.mohkeita.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
