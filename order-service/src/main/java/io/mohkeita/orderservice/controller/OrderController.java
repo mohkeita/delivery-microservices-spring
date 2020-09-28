@@ -20,8 +20,6 @@ public class OrderController {
 
     @PostMapping("/bookOrder")
     public TransactionResponse bookOrder(@RequestBody TransactionRequest request) {
-
-        return null;
-        //do a rest call to payment and pass the order id
+        return service.saveOrder(request);
     }
 }
