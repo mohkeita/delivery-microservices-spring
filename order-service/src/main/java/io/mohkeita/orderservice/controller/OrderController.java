@@ -1,5 +1,6 @@
 package io.mohkeita.orderservice.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import io.mohkeita.orderservice.common.TransactionRequest;
 import io.mohkeita.orderservice.common.TransactionResponse;
 import io.mohkeita.orderservice.service.OrderService;
@@ -17,7 +18,7 @@ public class OrderController {
     private OrderService service;
 
     @PostMapping("/bookOrder")
-    public TransactionResponse bookOrder(@RequestBody TransactionRequest request) {
+    public TransactionResponse bookOrder(@RequestBody TransactionRequest request) throws JsonProcessingException {
         return service.saveOrder(request);
     }
 }
